@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HOLLOW POINT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <a href="#home">HOME</a>
+        <a href="#shows">SHOWS</a>
+        <a href="#merch">MERCH</a>
+        <a href="#bio">BIO</a>
+        <a href="#mailing">MAILING LIST</a>
+    </nav>
+<main>
+<div id="content">
+    <section id="home">
+        <video playsinline autoplay muted loop poster="" id="bgvid">
+        <source src="video/logo.mp4" type="video/mp4">
+        </video>
+    </section>
+    <section class="orange" id="shows">
+        <div class="section-content" id="showsSection">
+            <h1>SHOWS</h1>
+            <div id="showList">
+                <span></span>
+            <template id="showTemplate">
+                <div class="show-list">
+                    <p class="date">JUN 5</p>
+                    <div class="location">
+                        <h3 class="venue">VENUE</h3>
+                        <p class="city">CITY</p>
+                    </div>
+                    <a class="black-btn">TICKETS</a>
+                </div>
+            </template>
+            </div>
+        </div>
+    </section>
+    <section id="merch">
+        <div class="section-content">
+            <br>
+            <h1>MERCH</h1>
+            <div class="flexbox-grid">
+                <div class="grid-row" id="merchGrid">
+                    <template id="merchTemplate">
+                    <div class="grid-item">
+                        <img id="productid" src="img.jpg">
+                        <h4>PRODUCT TITLE</h4>
+                        <p>PRICE,-kr</p>
+                        <a href="">BUY</a>
+                    </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="orange" id="bio">
+        <div class="section-content" id="bio-section">
+            <h1>BIO</h1>
+            <div id="appendBio"></div>
+            <template id="bioTemplate">
+                <img id="bio-img" src="">
+                <p id="bio-desc">
+                </p>
+            </template>
+        </div>
+    </section>
+    <section id="mailing">
+        <div class="section-content">
+            <h1>JOIN THE CLUB</h1>
+            <p>Sign up to the mailing list to keep up to date on concerts and offers!</p>
+
+            <!-- Mailchimp Signup Form - borrowed code -->
+            <div id="mc_embed_signup">
+            <form action="https://lanapirsl.us10.list-manage.com/subscribe/post?u=b274cfc3cc915576342011334&amp;id=49f4876434" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+
+            <div class="mc-field-group">
+                <label for="mce-EMAIL">Email address </label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="mc-field-group">
+                <label for="mce-FNAME">First name </label>
+                <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+            </div>
+            <div class="mc-field-group">
+                <label for="mce-LNAME">Last name </label>
+                <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+            </div>
+                <div id="mce-responses" class="clear">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_b274cfc3cc915576342011334_49f4876434" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="SUBSCRIBE" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            </div>
+            <!--end of borrowed code-->
+            
+        </div>
+            
+    </section>
+    </div>
+    </main>
+    <footer>
+        <template id="someTemplate">
+            <a href=""><img class="some" src="img/facebook.png"></a>
+        </template>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://www.100forms.com/js/FORMKEY:UGZD637W6M6L/SEND:lanapirsl17@gmail.com" type="text/javascript"></script>
+</body>
+
+</html>
