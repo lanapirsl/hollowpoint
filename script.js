@@ -44,6 +44,7 @@ function showMerch(singleObject){
     const template=document.querySelector("#merchTemplate").content;
     const copy = template.cloneNode(true);
     copy.querySelector("img").src=singleObject.img.guid;
+    copy.querySelector("img").alt=singleObject.img.post_name;
     copy.querySelector("h4").textContent=singleObject.product;
     copy.querySelector("p").textContent=singleObject.price+" kr";
     copy.querySelector("a").href=singleObject.link;
@@ -64,6 +65,7 @@ function showSome(singleObject){
     const template=document.querySelector("#someTemplate").content;
     const copy = template.cloneNode(true);
     copy.querySelector("img").src=singleObject.img.guid;
+    copy.querySelector("img").alt=singleObject.img.post_name;
     copy.querySelector("a").href=singleObject.link;
     document.querySelector("footer").appendChild(copy);
 }
@@ -81,6 +83,7 @@ function showBio(singleObject){
     const template=document.querySelector("#bioTemplate").content;
     const copy = template.cloneNode(true);
     copy.querySelector("#bio-img").src=singleObject.img.guid;
+    copy.querySelector("#bio-img").alt=singleObject.img.post_name;
     copy.querySelector("#bio-desc").textContent=singleObject.description;
     document.querySelector("#appendBio").appendChild(copy);
 }
